@@ -1,3 +1,94 @@
+$navbar-bg: $bleach-light-blue;
+$navbar-bg-hover: $bleach-light-blue-alternative;
+$navbar-bg-focus: $primary;
+$navbar-color: $black;
+$navbar-color-hover: $bleach-dark-blue;
+$navbar-active-color: $bleach-dark-blue;
+$navbar-active-bg: $bleach-light-blue-alternative;
+$navbar-active-shadow-small: inset 0 -4px 0 0 var(--primary);
+$navbar-active-shadow-medium: inset 0 -4px 0 0 var(--primary);
+
 .navbar{
-  background-color: #00f;
+  background-color: $navbar-bg;
+  color: $navbar-color;
+}
+
+.topbar__search{
+  input{
+    background: $bleach-light-blue;
+
+    &::placeholder{
+      color: $bleach-dark-blue;
+    }
+  }
+
+  &:not(:focus-within){
+    button{
+      background-color: var(--primary);
+      color: $white;
+    }
+  }
+
+  &:focus-within{
+    button{
+      background-color: var(--primary);
+    }
+    input{
+      background-color: $white;
+      border: 1px solid $black;
+
+      &::placeholder{
+        color: $bleach-dark-blue;
+      }
+    }
+  }
+}
+
+.topbar__user__login{
+  a{
+    color: $bleach-dark-blue;
+  }
+}
+
+.topbar__dropmenu{
+  ul{
+    li{
+      a{
+        color: $navbar-color;
+
+        &::after{
+          border-top-color: $dark-gray !important;
+        }
+      }
+    }
+  }
+}
+
+.topbar__admin__link{
+  a{
+    color: $dark-gray;
+
+    &:hover,
+    &:focus{
+      color: $navbar-color-hover;
+    }
+
+  }
+}
+
+.main-nav__link a{
+  color: $navbar-color;
+
+  &:hover,
+  &:focus{
+    background: $navbar-bg-hover;
+    color: $navbar-color-hover;
+    box-shadow: $navbar-active-shadow-small;
+  }
+}
+
+.main-nav__link--active a{
+  background: $navbar-active-bg;
+  color: $navbar-active-color;
+  box-shadow: $navbar-active-shadow-small;
 }

@@ -3,7 +3,4 @@
 base_path = File.expand_path("..", __dir__)
 Decidim::Webpacker.register_path("#{base_path}/app/packs", prepend: true)
 
-# Decidim::Webpacker.register_stylesheet_import("stylesheets/decidim/bleach")
-
-Decidim::Webpacker.register_stylesheet_import("stylesheets/decidim/bleach/_bleach.scss")
-# Decidim::Webpacker.register_stylesheet_import("stylesheets/decidim/bleach/modules/_navbar.scss")
+Decidim::Webpacker.register_stylesheet_import("stylesheets/decidim/bleach/bleach")

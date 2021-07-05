@@ -1,0 +1,19 @@
+$footer-bg: $secondary;
+$footer-color: $bleach-light-blue;
+
+.main-footer,
+.mini-footer{
+  background-color: $footer-bg;
+  color: $footer-color;
+
+  a{
+    color: $footer-color;
+    font-weight: bold;
+
+    &:hover,
+    &:focus{
+      color: $footer-color;
+    }
+  }
+}
+

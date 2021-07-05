@@ -1,11 +1,6 @@
-@import "modules/_navbar.scss";
-
-// $navbar-bg: #0ff;
-
-// .foo{
-//   color: #ff0;
-// }
-
-// .navbar{
-//   background-color: #f0f;
-// }
+@import "variables";
+@import "layouts/logo";
+@import "layouts/home";
+@import "modules/navbar";
+@import "modules/title-bar";
+@import "modules/footer";

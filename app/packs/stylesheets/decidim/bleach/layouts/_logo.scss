@@ -1,0 +1,7 @@
+.logo-wrapper span{
+  color: $bleach-dark-blue;
+}
+
+.logo-wrapper span::before{
+  border-left: 4px solid $bleach-dark-blue;
+}
