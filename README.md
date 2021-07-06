@@ -14,7 +14,7 @@ gem "decidim-bleach"
 
 And then add
 
-```
+```js
 @import "stylesheets/decidim/bleach/settings";
 ```
 
