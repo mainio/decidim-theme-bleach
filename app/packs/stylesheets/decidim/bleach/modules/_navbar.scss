@@ -36,6 +36,7 @@ $navbar-active-shadow-medium: inset 0 -4px 0 0 var(--primary);
     input{
       background-color: $white;
       border: 1px solid $black;
+      border-right: 0;
 
       &::placeholder{
         color: $bleach-dark-blue;
