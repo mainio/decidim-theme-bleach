@@ -5,15 +5,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "decidim/bleach/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "decidim-bleach"
+  spec.name = "decidim-theme-bleach"
   spec.version = Decidim::Bleach::VERSION
   spec.required_ruby_version = ">= 2.7"
   spec.authors = ["Eero Lahdenperä"]
   spec.email = ["eero.lahdenpera@mainiotech.fi"]
 
   spec.summary = "Whitens Decidim's default dark theme"
-  spec.description = "Remove compare and complete phases from proposal creation."
-  spec.homepage = "https://github.com/mainio/decidim-module-bleach"
+  spec.description = "By default Decidim looks very dark (e.g. dark background in navbar). This theme overrides Decidim's css so that it replaces dark colors with light colors."
+  spec.homepage = "https://github.com/mainio/decidim-theme-bleach"
   spec.license = "AGPL-3.0"
 
   spec.files = Dir[
