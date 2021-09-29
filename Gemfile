@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # DECIDIM_VERSION = Decidim::Bleach::DECIDIM_VERSION
-DECIDIM_VERSION = { github: "decidim/decidim", branch: "develop" }.freeze
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.25-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-bleach", path: "."
@@ -13,10 +13,6 @@ gem "bootsnap", "~> 1.4"
 gem "foundation_rails_helper", git: "https://github.com/sgruhier/foundation_rails_helper.git"
 gem "puma", ">= 5.3.1"
 
-gem "faker", "~> 2.14"
-
-gem "webpacker", "6.0.0.beta.7"
-
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
@@ -24,6 +20,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "faker", "~> 2.14"
   gem "letter_opener_web", "~> 1.3"
   gem "listen", "~> 3.1"
   gem "spring", "~> 2.0"
