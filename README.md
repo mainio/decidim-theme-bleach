@@ -19,7 +19,7 @@ Feel free to customize to your needs within your instance!
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "decidim-bleach"
+gem "decidim-theme-bleach"
 ```
 
 And then execute:
