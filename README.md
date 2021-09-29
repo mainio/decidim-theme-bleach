@@ -1,4 +1,4 @@
-# Decidim::Bleach - A Bleach theme for Decidim
+# Decidim::Bleach - A light theme for Decidim
 
 The gem has been developed by [Mainio Tech](https://www.mainiotech.fi/).
 
