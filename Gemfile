@@ -6,7 +6,7 @@ source "https://rubygems.org"
 DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.25-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-bleach", path: "."
+gem "decidim-theme-bleach", path: "."
 
 gem "bootsnap", "~> 1.4"
 

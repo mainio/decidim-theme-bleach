@@ -188,7 +188,7 @@ GIT
 PATH
   remote: .
   specs:
-    decidim-bleach (0.25.0)
+    decidim-theme-bleach (0.25.0)
       decidim-core (~> 0.25.0.dev)
 
 GEM
@@ -801,8 +801,8 @@ DEPENDENCIES
   byebug (~> 11.0)
   codecov
   decidim!
-  decidim-bleach!
   decidim-dev!
+  decidim-theme-bleach!
   faker (~> 2.14)
   foundation_rails_helper!
   letter_opener_web (~> 1.3)
