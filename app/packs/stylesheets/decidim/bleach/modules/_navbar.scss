@@ -47,8 +47,18 @@ $navbar-active-shadow-medium: inset 0 -4px 0 0 var(--primary);
 }
 
 .topbar__user__login{
-  a{
-    color: $bleach-dark-blue;
+  @include breakpoint(medium) {
+    a{
+      color: $bleach-dark-blue;
+    }
+  }
+}
+
+.topbar__menu{
+  svg {
+    &.icon{
+      fill: $black;
+    }
   }
 }
 
