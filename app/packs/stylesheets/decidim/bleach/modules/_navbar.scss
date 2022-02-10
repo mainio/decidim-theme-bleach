@@ -88,6 +88,14 @@ $navbar-active-shadow-medium: inset 0 -4px 0 0 var(--primary);
   }
 }
 
+.topbar__notifications,
+.topbar__conversations{
+  .icon{
+    fill: $black;
+    opacity: .6;
+  }
+}
+
 .main-nav__link a{
   color: $navbar-color;
 
