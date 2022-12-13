@@ -10,6 +10,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.0"
   spec.authors = ["Eero Lahdenperä"]
   spec.email = ["info@mainiotech.fi"]
+  spec.metadata = {
+    "rubygems_mfa_required" => "true"
+  }
 
   spec.summary = "Whitens Decidim's default dark theme"
   spec.description = "By default Decidim looks very dark (e.g. dark background in navbar). This theme overrides Decidim's css so that it replaces dark colors with light colors."
