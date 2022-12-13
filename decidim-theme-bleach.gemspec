@@ -7,9 +7,9 @@ require "decidim/bleach/version"
 Gem::Specification.new do |spec|
   spec.name = "decidim-theme-bleach"
   spec.version = Decidim::Bleach::VERSION
-  spec.required_ruby_version = ">= 2.7"
+  spec.required_ruby_version = ">= 3.0"
   spec.authors = ["Eero Lahdenperä"]
-  spec.email = ["eero.lahdenpera@mainiotech.fi"]
+  spec.email = ["info@mainiotech.fi"]
 
   spec.summary = "Whitens Decidim's default dark theme"
   spec.description = "By default Decidim looks very dark (e.g. dark background in navbar). This theme overrides Decidim's css so that it replaces dark colors with light colors."

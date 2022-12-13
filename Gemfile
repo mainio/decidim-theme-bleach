@@ -16,9 +16,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-theme-bleach", path: "."
 
 gem "bootsnap", "~> 1.4"
-
-gem "foundation_rails_helper", git: "https://github.com/sgruhier/foundation_rails_helper.git"
-gem "puma", ">= 5.3.1"
+gem "puma", "~> 5.0"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -28,11 +26,11 @@ end
 
 group :development do
   gem "faker", "~> 2.14"
-  gem "letter_opener_web", "~> 1.3"
+  gem "letter_opener_web", "~> 2.0"
   gem "listen", "~> 3.1"
   gem "spring", "~> 2.0"
   gem "spring-watcher-listen", "~> 2.0"
-  gem "web-console", "~> 3.5"
+  gem "web-console", "~> 4.2"
 end
 
 group :test do
