@@ -1,0 +1,32 @@
+$calendar-active-color: rgba(var(--primary-rgb), 0.3);
+
+.datepicker td.active.day,
+.datepicker td.active.year{
+  background: $calendar-active-color;
+}
+
+.datepicker .day:hover,
+.datepicker .date-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker .month:hover,
+.datepicker .year:hover{
+  background-color: $calendar-bg-hover;
+
+  &.active{
+    background: $calendar-active-color;
+  }
+}
+
+.datepicker td span.active{
+  background: $calendar-active-color;
+}
+
+.datepicker th.active.day,
+.datepicker th.active.year{
+  background: $calendar-active-color;
+}
+
+.datepicker th span.active{
+  background: $calendar-active-color;
+}
