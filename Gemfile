@@ -8,7 +8,7 @@ ruby RUBY_VERSION
 # the Gemfile is copied to the development_app folder (almost) as is.
 base_path = ""
 base_path = "../" if File.basename(__dir__) == "development_app"
-require_relative "#{base_path}lib/decidim/bleach/version"
+require_relative "#{base_path}lib/decidim/theme/bleach/version"
 
 DECIDIM_VERSION = Decidim::Theme::Bleach::DECIDIM_VERSION
 
