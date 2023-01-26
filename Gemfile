@@ -10,7 +10,7 @@ base_path = ""
 base_path = "../" if File.basename(__dir__) == "development_app"
 require_relative "#{base_path}lib/decidim/bleach/version"
 
-DECIDIM_VERSION = Decidim::Bleach::DECIDIM_VERSION
+DECIDIM_VERSION = Decidim::Theme::Bleach::DECIDIM_VERSION
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-theme-bleach", path: "."

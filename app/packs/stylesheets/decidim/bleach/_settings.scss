@@ -11,6 +11,12 @@ $primary-rgb: $bleach-blue-rgb;
 $secondary: $bleach-scarpa;
 $secondary-rgb: $bleach-scarpa-rgb;
 
+// 4. Base Typography
+// ------------------
+
+$anchor-color: #{var(--link)};
+$anchor-color-hover: #{var(--anchor-hover)};
+
 // 20. Forms
 // ---------
 

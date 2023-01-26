@@ -2,11 +2,11 @@
 
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "decidim/bleach/version"
+require "decidim/theme/bleach/version"
 
 Gem::Specification.new do |spec|
   spec.name = "decidim-theme-bleach"
-  spec.version = Decidim::Bleach::VERSION
+  spec.version = Decidim::Theme::Bleach::VERSION
   spec.required_ruby_version = ">= 3.0"
   spec.authors = ["Eero Lahdenperä"]
   spec.email = ["info@mainiotech.fi"]
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "decidim-core", Decidim::Bleach::DECIDIM_VERSION
+  spec.add_dependency "decidim-core", Decidim::Theme::Bleach::DECIDIM_VERSION
 
-  spec.add_development_dependency "decidim-dev", Decidim::Bleach::DECIDIM_VERSION
+  spec.add_development_dependency "decidim-dev", Decidim::Theme::Bleach::DECIDIM_VERSION
 end
