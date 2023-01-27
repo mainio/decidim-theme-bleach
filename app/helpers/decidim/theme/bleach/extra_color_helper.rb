@@ -5,8 +5,11 @@ module Decidim
     module Bleach
       module ExtraColorHelper
         def extra_css_colors
-          rgb = current_organization.colors["link"].match(/^#(..)(..)(..)$/).captures.map(&:hex)
-          color = rgb || [32, 108, 255]
+          color = if current_organization.colors["link"]
+                    current_organization.colors["link"].match(/^#(..)(..)(..)$/).captures.map(&:hex)
+                  else
+                    [32, 108, 255]
+                  end
 
           determine_light(color)
         end

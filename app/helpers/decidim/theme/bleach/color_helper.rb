@@ -17,8 +17,8 @@ module Decidim
         end
 
         def change_hover_color(shade)
-          hex_color = current_organization.colors["link"] || [32, 108, 255]
-          color = hex_color.gsub!("#", "")
+          hex_color = current_organization.colors["link"] || "#206cff"
+          color = hex_color.gsub("#", "")
           rgb = color.scan(/../).map(&:hex)
           case shade
           when "light"
