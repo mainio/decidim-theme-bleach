@@ -1,0 +1,12 @@
+.author-data{
+  .author__name{
+    color: $anchor-color;
+  }
+}
+
+.author>a{
+  &:hover,
+  &:focus{
+    color: $anchor-color-hover;
+  }
+}

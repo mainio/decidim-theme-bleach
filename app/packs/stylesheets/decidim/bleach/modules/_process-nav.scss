@@ -1,0 +1,6 @@
+a.process-nav__link{
+  &:hover,
+  &:focus{
+    color: var(--primary);
+  }
+}
