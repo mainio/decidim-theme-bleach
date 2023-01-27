@@ -35,9 +35,9 @@ $footer-link-hover: var(--anchor-hover);
     position: static;
   }
 
-  @include breakpoint(small){
+  @media all and (max-width: 640px) {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
   }
 }
