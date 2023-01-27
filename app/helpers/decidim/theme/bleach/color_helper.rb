@@ -22,12 +22,12 @@ module Decidim
           rgb = color.scan(/../).map(&:hex)
           case shade
           when "light"
-            amount = 0.4
+            amount = 0.5
             rgb[0] = (rgb[0].to_i * amount).round
             rgb[1] = (rgb[1].to_i * amount).round
             rgb[2] = (rgb[2].to_i * amount).round
           when "dark"
-            amount = 0.6
+            amount = 0.3
             rgb[0] = [(rgb[0].to_i + (255 * amount)).round, 255].min
             rgb[1] = [(rgb[1].to_i + (255 * amount)).round, 255].min
             rgb[2] = [(rgb[2].to_i + (255 * amount)).round, 255].min

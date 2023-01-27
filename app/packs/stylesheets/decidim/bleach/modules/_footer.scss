@@ -1,7 +1,6 @@
 $footer-bg: var(--footer);
 $footer-color: $bleach-light-blue;
 $footer-link-color: #fff;
-$footer-link-hover: var(--anchor-hover);
 
 //Main footer
 .main-footer{
@@ -22,7 +21,7 @@ $footer-link-hover: var(--anchor-hover);
 
     &:hover,
     &:focus{
-      color: $footer-link-hover;
+      color: #fff;
     }
   }
 }
