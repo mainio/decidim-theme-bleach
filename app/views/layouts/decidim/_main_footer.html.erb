@@ -5,6 +5,8 @@
         <%= link_to current_organization.official_url, class: "main-footer__badge" do %>
           <%= image_tag current_organization.attached_uploader(:official_img_footer).path, alt: current_organization.name %>
         <% end %>
+      <% else %>
+        &nbsp;
       <% end %>
     </div>
     <div class="medium-6 large-6 column">
