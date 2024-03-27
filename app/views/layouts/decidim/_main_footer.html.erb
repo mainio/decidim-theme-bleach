@@ -3,7 +3,7 @@
     <div class="medium-4 large-3 column">
       <% if current_organization.official_img_footer.attached? %>
         <%= link_to current_organization.official_url, class: "main-footer__badge" do %>
-          <%= image_tag current_organization.attached_uploader(:official_img_footer).path, alt: current_organization.name %>
+          <%= image_tag current_organization.attached_uploader(:official_img_footer).url, alt: current_organization.name %>
         <% end %>
       <% else %>
         &nbsp;
